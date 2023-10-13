@@ -1,0 +1,1298 @@
+/*************  Preset  ************/
+body{
+    background-color: #121212 !important;
+    overflow-x: hidden;
+}
+
+.gradient{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg,#2e2e2e 0%,#121212 100%);
+    z-index: -1;
+}
+
+a{
+    text-decoration: none !important;
+    letter-spacing: 1px;
+}
+
+.logo a{
+    color: #ff2e38;
+    font-weight: bold;
+    transition: color .4s;
+}
+
+.logo a:hover{
+    color: #fff;
+}
+
+.search-box{
+    width: 100%;
+    height: 40px;
+    border: none !important;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff !important;
+    background-color: #383838 !important;
+    padding-left: 0px !important;
+}
+
+.search-box:focus{
+    background-color: #383838;
+    color: #fff;
+    box-shadow: none !important;
+}
+
+.search-box::placeholder{
+    color: #b3b3b3 !important;
+}
+
+.input-group-text{
+    background-color: #383838 !important;
+    border: none !important;
+    
+}
+
+.input-group-text svg{
+    color: #b3b3b3;
+    transition: color .4s;
+    cursor: pointer;
+}
+
+.input-group-text:hover svg{
+    color: #ff2e38;
+}
+
+.clear-search{
+    background-color: #383838;
+    border: none !important;
+    color: #ff2e38;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color .4s;
+}
+
+.clear-search:hover{
+    color: #fff;
+    
+}
+
+.search-group{
+    position: relative;
+}
+
+.search-group .search-result{
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.search-group .search-result.active{
+    display: block;
+}
+
+.search-group .search-result ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.search-group .search-result ul li{
+    list-style: none;
+    display: flex;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-bottom: 1px solid #323232;
+}
+
+.search-group .search-result ul li:first-child{
+    padding-top: 0px;
+}
+
+.search-group .search-result ul li:last-child{
+    padding-bottom: 0px;
+    border: none;
+}
+
+
+.search-group .search-result ul li img{
+    width: 80px;
+    border-radius: 4px;
+}
+
+.search-group .search-result ul li .result-details{
+    width: 100%;
+    margin-left: 16px;
+}
+
+.search-group .search-result ul li .result-details .search-title{
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    transition: color .4s;
+}
+
+.search-group .search-result ul li .result-details .search-title:hover{
+    color: #ff2e38;
+}
+
+.search-group .search-result ul li .result-details .search-description{
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #999;
+}
+
+.add-cinemas{
+    color: #ff2e38;
+    transition: color .4s;
+    font-size: 16px;
+    font-weight: 600px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+.add-cinemas svg{
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.add-cinemas:hover{
+    color: #fff;
+    
+}
+
+.error{
+    display: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #fbe9ea;
+    color: #616161;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.error.active{
+    display: block;
+}
+
+.success{
+    display: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #e9fbe9;
+    color: #616161;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.success.active{
+    display: block;
+}
+
+@media (min-width: 1200px){
+    .gradient {
+        top: 0;
+        height: 520px;
+    }
+}
+
+@media (max-width: 1200px){
+    .search-group .search-result{
+        position: relative !important;
+        background-color: transparent;
+        padding: 0;
+        margin-top: 18px;
+    }
+
+    .search-group .search-result ul li img{
+        width: 65px;
+    }
+}
+
+
+
+/*************  Nav  ************/
+nav .logo a{
+    font-size: 25px;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    padding-top: 32px;
+    padding-left: 32px;
+    width: 272px;
+}
+
+nav .primary-nav, nav .secondary-nav{
+    padding: 0;
+    margin-top: 32px;
+}
+
+nav ul li{
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav ul li a{
+    color: #999;
+}
+
+nav .primary-nav li{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+nav ul li a{
+    color: #999;
+    transition: color .4s;
+    display: inline-flex;
+    align-items: center;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+nav ul li a.active{
+    color: white;
+}
+
+nav ul li a.active svg{
+    color: #ff2e38;
+}
+
+nav .primary-nav li svg{
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+nav .secondary-nav{
+    margin-top: 50px;
+}
+
+nav .secondary-nav li{
+    margin-bottom: 20px;
+    
+}
+
+.cross{
+    position: relative;
+    cursor: pointer;
+}
+
+.cross .cross-bar{
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px 0px;
+    transition: background-color .4s;
+}
+
+.cross:hover .cross-bar{
+    background-color: #ff2e38;
+}
+
+.cross .cross-bar-left{
+    transform: rotate(45deg);
+}
+
+.cross .cross-bar-right{
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 10px;
+    left: 0px;
+}
+
+@media (max-width: 1200px){
+    nav{
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        background-color: #121212;
+        left: -100%;
+        transition: left .4s;
+        padding: 20px;
+    }
+
+    nav.active{
+        left: 0;
+    }
+}
+
+/*************  Header  ************/
+header{
+    color: white;
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-bottom: 40px;
+    display: block;
+}
+
+@media (max-width: 1200px){
+    header {
+        position: fixed;
+        height: 56px;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 13px 16px;
+        background-color: #2e2e2e;
+        z-index: 1;
+    }
+
+    header .login svg{
+        color: white !important;
+    }
+
+    header .login svg:hover{
+        color: #ff2e38 !important;
+    }
+}
+
+main{
+    width: 100%;
+}
+
+header .login{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+}
+
+header .login:hover div > span, header .login:hover svg{
+    color: #fff;
+}
+
+header .login svg{
+    color: #ff2e38;
+    font-size: 20px;
+    transition: color .4s;
+}
+
+header .login span{
+    font-size: 16px;
+    font-weight: 600;
+    color: #949494;
+    transition: color .4s;
+}
+
+header .logo a{
+    font-size: 18px;
+}
+
+header .burger{
+    height: 100%;
+    cursor: pointer;
+}
+
+header .burger-bar{
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px 0px;
+    transition: background-color .4s;
+}
+
+header .burger:hover .burger-bar{
+    background-color: #ff2e38;
+}
+
+header .username{
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff !important;
+}
+
+header .user{
+    position: relative;
+}
+
+header .user-menu{
+    position: absolute;
+    width: 250px;
+    border-radius: 4px;
+    top: -145px;
+    right: 0;
+    opacity: 0;
+    margin-top: 50px;
+    padding-top: 10px;
+}
+
+header .user:hover .user-menu{
+    top: -10px;
+    opacity: 1;
+}
+
+header .user-menu ul{
+    padding: 0;
+    margin: 0;
+    background-color: #2c2c2c;
+    border: 1px solid #383838;
+}
+
+header .user-menu ul li{
+    list-style-type: none;
+    border-top: 1px solid #383838;
+}
+
+header .user-menu ul li span{
+    display: block;
+    padding: 16px 0px;
+}
+
+header .user-menu ul li span a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #949494;
+    transition: color .4s;
+}
+
+header .user-menu ul li span:hover, header .user-menu ul li span:hover a{
+    color: white;
+}
+
+/*************  Modal Panel  ************/
+.custom-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: 2;
+    transition: height 0s;
+    overflow: hidden;
+    transition-delay: .4s;
+}
+
+.custom-modal.active{
+    height: 100%;
+    transition-delay: 0s;
+}
+
+.custom-modal.active .modal-background{
+    opacity: 1;
+    transition: opacity .4s;
+}
+
+.modal-panel{
+    position: absolute;
+    width: 488px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: #121212;
+    transform: translateX(100%);
+    transition: transform .4s;
+    color: white;
+    z-index: 3;
+    padding: 25px 25px;
+}
+
+.modal-panel.active{
+    transform: translateX(0);
+}
+
+
+
+.modal-background{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    opacity: 0;
+    backdrop-filter: blur(8px);
+    transition: opacity .4s;
+}
+
+.custom-modal{
+    width: 100%;
+    text-align: center;
+}
+
+.custom-modal h1{
+    color: #ff2e38;
+    font-weight: 600;
+}
+
+.custom-modal h4{
+    margin-bottom: 20px;
+}
+
+.custom-modal input{
+    width: 100%;
+    height: 48px;
+    /* padding-top: 16px; */
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid #616161;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #fff;
+    background-color: #353535;
+    margin-bottom: 15px;
+}
+
+.custom-modal button.login, .custom-modal button.register{
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff2e38;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.custom-modal p{
+    margin-top: 30px;
+}
+
+.custom-modal p button{
+    border: none;
+    background-color: transparent;
+    color: #ff2e38;
+    font-weight: 600;
+    transition: color .4s;
+}
+
+.custom-modal p button:hover{
+    color: #fff;
+}
+
+.custom-modal .cinemas{
+    width: 100%;
+}
+
+.custom-modal .cinemas .states{
+    display: flex;
+    padding: 0;
+}
+
+.custom-modal .cinemas .states li{
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+.custom-modal .cinemas .states li button{
+    padding-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #999;
+    border: none;
+    background-color: transparent;
+    background-image: linear-gradient(#ff2e38,#ff2e38);
+    background-position: 0 100%;
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+    transition: color .4s, background-size .4s;
+}
+
+.custom-modal .cinemas .states li button.active{
+    background-size: 100% 2px;
+    color: #fff;
+}
+
+.custom-modal .cinemas .states li button:hover{
+    background-size: 100% 2px;
+    color: #fff;
+}
+
+.custom-modal .cinema-list{
+    padding: 0;
+}
+
+.custom-modal .cinema-list li{
+    list-style-type: none;
+}
+
+.custom-modal .cinema-list li .checkbox-group{
+    width: 215px;
+    height: 40px;
+    position: relative;
+    text-align: left;
+}
+
+.custom-modal .cinema-list li input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    position: absolute;
+    display: block;
+    top: 12px;
+    right: 15px;
+    border: none;
+    border-radius: 50% !important;
+    background-color: #383838;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+/* .custom-modal .cinema-list li input[type="checkbox"]{
+    background-color: #383838;
+} */
+
+.custom-modal .cinema-list li label{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    border: 1px solid #353535;
+    border-radius: 4px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #222;
+    transition: background-color .4s;
+    cursor: pointer;
+}
+
+.custom-modal .reservation{
+    width: 100%;
+}
+
+.custom-modal .reservation .reservation-poster{
+    width: 120px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.custom-modal .reservation .reservation-poster img{
+    width: 100%;
+}
+
+.custom-modal .reservation .reservation-movie{
+    justify-content: flex-end;
+}
+
+.reservation .ticket{
+    width: 100%;
+    height: 62px;
+    padding: 12px 16px;
+    background-color: #222;
+    align-items: center;
+    border: 1px solid #2e2e2e;
+    border-radius: 4px;
+    justify-content: space-between;
+}
+
+.reservation .ticket span{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.reservation .ticket .ticket-input-group{
+    align-items: center;
+}
+
+.reservation .ticket .ticket-input-group input{
+    width: 56px;
+    height: auto;
+    margin: 0 8px;
+    border: 1px solid #383838;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    background-color: #2c2c2c;
+}
+
+.reservation .ticket .ticket-input-group svg{
+    font-size: 22px;
+    cursor: pointer;
+    transition: color .4s;
+    
+}
+
+.reservation .ticket .ticket-input-group svg:hover{
+    color: #ff2e38;
+}
+
+.reservation .reserve-button{
+    margin-top: 15px;
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff2e38;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media (max-width: 576px){
+    .modal-panel{
+        width: 100%;
+    }
+}
+
+/*************  Home Page  ************/
+.movies ul{
+    margin: 0;
+    padding: 0;
+}
+
+.movies ul.movie-tabs li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.movies ul.movie-tabs li a{
+    color: #999;
+    font-size: 23px;
+    transition: color .4s;
+    font-weight: 600;
+    padding-bottom: 8px;
+    background-position: 0 100%;
+    background-image: linear-gradient(#ff2e38,#ff2e38);
+    background-position: 0 100%;
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+    transition: color .4s, background-size .4s;
+}
+
+.movies ul.movie-tabs li a.active{
+    color: #dedede;
+    background-size: 100% 2px;
+}
+
+.movies ul.movie-tabs li a:hover{
+    color: #dedede;
+    background-size: 100% 2px;
+}
+
+.movie-list{
+    margin-top: 50px;
+}
+
+.movie-list ul li{
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+
+.movie-list .movie-poster{
+    display: inline-block;
+    width: 156px;
+    height: 231px;
+    margin-right: 32px;
+}
+
+.movie-list .movie-poster img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.movie-list .movie-details .movie-title{
+    margin-bottom: 8px;
+}
+
+.movie-list .movie-details .movie-title a{
+    color: #fff;
+    transition: color .4s;
+}
+
+.movie-list .movie-details .movie-title a:hover{
+    color: #ff2e38;
+    transition: color .4s;
+}
+
+.movie-list .movie-details{
+    display: inline-flex;
+    color: #999;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: flex-start; */
+}
+
+.movie-list .movie-details .movie-pine{
+    margin: 0 8px;
+}
+
+.movie-list .movie-details .movie-duration, .movie-list .movie-details .movie-release-date{
+    font-size: 13px;
+    font-weight: 600;
+    color: #999;
+}
+
+.movie-list .movie-details .movie-description{
+    margin: 0;
+    max-width: 660px;
+}
+
+@media (max-width: 576px){
+    .movie-list .movie-poster{
+        width: 102px;
+        height: 151px;
+    }
+
+    .movie-list .movie-details .movie-title{
+        font-size: 18px;
+    }
+
+    .movie-list .movie-poster{
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 1200px){
+    .movies{
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .movies ul.movie-tabs li a{
+        font-size: 18px;
+    }
+}
+
+/*************  Footer  ************/
+footer{
+    border-top: 1px solid #262626;
+    background-color: #000;
+}
+
+footer .follow{
+    width: 240px;
+    padding: 32px;
+}
+
+footer .footer-heading{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #999;
+}
+
+footer .about{
+    padding: 32px;
+}
+
+footer ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li{
+    list-style-type: none;
+    margin-top: 16px;
+    margin-right: 16px;
+}
+
+footer ul li a{
+    font-size: 13px;
+    color: #fff;
+    transition: color .4s;
+}
+
+
+footer ul li a:hover{
+    color: #ff2e38;
+}
+
+footer .follow li a {
+    font-size: 18px;
+}
+
+footer .about ul{
+    flex-wrap: wrap;
+}
+
+footer .copyright{
+    background-color: #1e1e1e;
+    padding: 16px 0;
+}
+
+footer .copyright span{
+    font-size: 12px;
+    color: #999;
+}
+
+@media (max-width: 576px){
+    
+    footer .follow{
+        width: 100%;
+        padding: 32px 16px;
+    }
+
+    footer .about{
+        width: 100%;
+        padding: 32px 16px;
+        padding: 0px 16px 32px 16px;
+    }
+}
+
+/*************  Movie Detail Page  ************/
+.movie .poster{
+    width: 160px;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-right: 25px;
+}
+
+.movie .poster img{
+    width: 100%;
+    height: 100%;
+}
+
+.movie .details{
+    color: #fff;
+    justify-content: flex-end;
+}
+
+.movie .details h1{
+    font-size: 32px;
+}
+
+.pine{
+    margin: 0 8px;
+}
+
+.duration, .release-date{
+    font-size: 13px;
+    font-weight: 600;
+    color: #dedede;
+}
+
+.movie .description{
+    color: #999;
+    margin-top: 25px;
+}
+
+.movie .sessions{
+    margin-top: 40px;
+}
+
+.movie .sessions-heading{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.movie .sessions .dates{
+    display: flex;
+    padding: 0; 
+}
+
+.movie .sessions .dates li button{
+    width: 102px;
+    display: block;
+    padding: 7px 0;
+    border: 1px solid #383838;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: #999;
+    background-color: #2e2e2e;
+    transition: background-color .4s,color .4s;
+}
+
+.movie .sessions .dates li{
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.movie .sessions .dates li button.active{
+    background-color: #ff2e38;
+    color: #fff;
+}
+
+.movie .sessions .dates li button:hover{
+    color: #fff;
+}
+
+.movie h5{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.movie .times{
+    padding: 0;
+    display: flex;
+}
+
+.movie .times li{
+    list-style-type: none;
+    width: 20%;
+    height: 56px;
+}
+
+.session{
+    position: relative;
+    height: 100%;
+    padding: 9px 15px 9px 20px;
+    border: 1px solid #383838;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 16px;
+    transition: background-color .4s;
+}
+
+.session:hover{
+    background-color: #303030;
+}
+
+.session::before{
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    width: 5px;
+    border-radius: 4px 0 0 4px;
+    background-color: #cd242c;
+}
+
+.session .session-time{
+
+    font-weight: 700;
+    color: #dedede;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.session .session-type{
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.movie .times .session .session-slot{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.movie .times .session .session-slot.sold-out{
+    top: 18px;
+}
+
+.movie .reviews-heading{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.movie .reviews{
+    width: 50%;
+    min-height: 200px;
+}
+
+.movie .reviews ul{
+    margin: 0;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: scroll;
+    
+}
+
+.movie .reviews ul li{
+    list-style-type: none;
+}
+
+.movie .reviews ul li b{
+    color: #dedede;
+}
+
+.movie .reviews ul li p{
+    color: #999;
+}
+
+.movie .reviews #review-input{
+    background-color: #353535;
+    border: 1px solid #616161;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #fff;
+}
+
+.movie .reviews #review-input::placeholder{
+    color: #999;;
+}
+
+.movie .reviews .review-submit{
+    margin-top: 15px;
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff2e38;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+@media (max-width: 1200px){
+    .movie{
+        margin-top: 80px;
+        margin-bottom: 50px;
+        padding: 0 20px;
+    }
+
+    .movie .reviews{
+        width: 100%;
+    }
+
+    .movie .times li{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px){
+    .movie .times{
+        flex-wrap: wrap;
+    }
+}
+
+/*************  Profile Page  ************/
+.profile{
+    color: #fff;
+}
+
+.profile h1{
+    font-size: 32px;
+}
+
+.profile input{
+    width: 100%;
+    height: 48px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid #616161;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #fff;
+    background-color: #353535;
+    margin-bottom: 15px;
+}
+
+.profile .joined-date{
+    color: #999;
+}
+
+.profile button.save{
+    margin-top: 15px;
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff2e38;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media (max-width: 1200px){
+    .profile{
+        margin-top: 80px;
+        margin-bottom: 50px;
+        padding: 0 20px;
+    }
+}
+
+/*************  Tickets Page  ************/
+.my-tickets{
+    color: #fff;
+}
+
+.my-tickets h1{
+    font-size: 32px;
+}
+
+.my-tickets ul {
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+
+}
+
+.my-tickets ul li{
+    list-style-type: none;
+    margin-right: 20px;
+
+}
+
+.a-ticket{
+    width: 300px;
+    background-color: #2e2e2e;
+    border-radius: 4px;
+    justify-content: space-between;
+}
+
+.a-ticket-title{
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ff2e38;
+}
+
+.a-ticket-body{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 1200px){
+    .my-tickets{
+        margin-top: 80px;
+        margin-bottom: 50px;
+        padding: 0 20px;
+    }
+
+    .my-tickets ul li{
+        width: 100%;
+    }
+
+    .a-ticket{
+        width: 100%;
+    }
+}
